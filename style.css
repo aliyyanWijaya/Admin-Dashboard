@@ -26,16 +26,43 @@ body {
     grid-area: header;
     background-color: lightgoldenrodyellow;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 2fr;
 }
 
 .article {
     grid-area: article;
     background-color: lightgray;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2px;
 }
 
 .header div,
-.sidebar div {
+.sidebar div,
+.article div,
+.right-column div {
     border: 2px solid black
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 1fr 14fr;
+    gap: 2px;
+}
+
+.right-column {
+    display: grid;
+}
+
+.announcements,
+.trending {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.article-containers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 2px;
 }

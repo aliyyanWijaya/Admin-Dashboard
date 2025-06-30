@@ -29,3 +29,7 @@ body {
     grid-area: article;
     background-color: lightgray;
 }
+
+.header div {
+    border: 2px solid black
+}
